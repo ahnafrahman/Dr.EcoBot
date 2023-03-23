@@ -34,28 +34,3 @@ async def gpt(ctx: commands.Context, *, prompt: str):
             await ctx.reply(embed=embed)
 
 bot.run(Token)
-
-# import discord
-
-# intents = discord.Intents.default()
-# intents.message_content = True
-# token = ''
-
-# client = discord.Client(intents=intents)
-
-
-# @client.event
-# async def on_ready():
-#     print("Dr. Ecobot has logged in as " + client)
-
-
-# @client.event
-# async def on_message(message):
-#     username = str(message.author).split('#')[0]
-#     user_message = str(message.content)
-#     channel = str(message.channel.name)
-
-#     print(username + "said" + user_message.lower() + "in" + channel)
-#     # when user types anything into discord server, it says "this user said" in this discord channel
-
-# client.run(token)
